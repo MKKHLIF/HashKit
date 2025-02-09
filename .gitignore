@@ -3,7 +3,8 @@
 /cmake-build-debug/
 /out/
 /cmake-build-debug-visual-studio/
-cmake-build-debug-mingw/
+/cmake-build-debug-mingw/
+
 # Ignore all .o and .a files
 *.o
 *.a
@@ -40,4 +41,43 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 
-.git/
+# Ignore git submodules
+.gitmodules
+
+# Ignore logs and debug output
+*.log
+*.out
+*.err
+
+# Ignore temporary files and editor backups
+*.bak
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Thumbs.db for Windows
+Thumbs.db
+
+# Ignore npm and node_modules (if using Node.js for any tooling)
+node_modules/
+
+# Ignore python bytecode files (if applicable)
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore generated documentation files (if using doxygen or similar)
+*.doxygen
+
+# Ignore generated VSCode workspace settings
+.vscode/
+
+# Ignore any temporary or IDE-specific files you don't want
+*.iml
+
+# Ignore the git configuration file (if present)
+.git/config
