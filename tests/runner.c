@@ -14,6 +14,9 @@ extern void test_sha512_224_test_vectors(void);
 extern void test_sha512_256_test_vectors(void);
 extern void test_sha256_hash_to_byte_vector(void);
 
+// MD5 Tests
+extern void test_Md5_HashTestVectors(void);
+
 void setUp(void) {
 }
 
@@ -36,6 +39,9 @@ int main(void) {
     RUN_TEST(test_sha512_224_test_vectors);
     RUN_TEST(test_sha512_256_test_vectors);
     RUN_TEST(test_sha256_hash_to_byte_vector);
+
+    printf("================ MD5 tests ================\n");
+    RUN_TEST(test_Md5_HashTestVectors);
 
     return UNITY_END();
 }
